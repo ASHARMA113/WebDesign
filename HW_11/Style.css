@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+.main{
+    font-size: 24px;
+    text-align: center;
+}
+
+.main::before{
+    content: 'The Beautiful Nature';
+}
+.main::after{
+    content:' of New York city' ;
+}
+.sub{
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background: url(./NYC.jpg);
+}
+
+.sub::before{
+    content:"";
+    width:200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0, 0 , 0 ,0.7 );
+    transition:0.5s ;
+}
+
+.sub::after{
+    content:"";
+    width:100px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    right:0;
+    background: rgba(0, 0 , 0 ,0.7 );
+    transition:0.5s ;
+}
+
+.sub:hover::before{
+    left: 600px;
+}
+
+.sub:hover::after{
+    right: -600px;
+}

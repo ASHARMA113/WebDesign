@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.france{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    border: 1px solid black;
+    margin:  20px auto;
+}
+
+.blue{
+    width: 33%;
+    height: 100%;
+    background: blue;
+}
+
+.white{
+    width: 34%;
+    height: 100%;
+    background: white;
+}
+
+.red{
+    width: 33%;
+    height: 100%;
+    background: red;
+}
+.france:hover{
+    display: block;
+}
+.france:hover .blue {
+ background: black; 
+ width: 100%;
+ height:33%;   
+}
+.france:hover .white{
+ background: gold; 
+ width: 100%;
+ height:34%;   
+}
+.france:hover .red{
+ background: green; 
+ width: 100%;
+ height:33%;   
+}
+
+

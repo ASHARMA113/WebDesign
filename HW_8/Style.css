@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.white{
+    width: 450px;
+    height: 250px;
+    background: white;
+    border:1px solid black ;
+    display: flex;
+    margin: auto;
+}
+
+.horizontalred{
+    width: 50px;
+    height: 100px;
+    background: red;
+    margin: auto;    
+}
+
+.verticalred{
+    width:20px ;
+    height: 100px;
+    background: red;
+    margin: auto;   
+
+}
