@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  width: 750px;
+  margin: 20px auto;
+  background: red;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+.nav > li,
+.snav > li {
+  width: 100%;
+  position: relative;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: Arial;
+  line-height: 50px;
+  display: block;
+}
+
+.nav li:hover {
+  background: blue;
+}
+
+.snav {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: red;
+  width: 100%;
+  display: none;
+}
+
+.ssnav {
+  list-style: none;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  background: red;
+  width: 100%;
+  display: none;
+}
+
+.nav > li:hover > .snav {
+  display: block;
+}
+
+.snav > li:hover > .ssnav {
+  display: block;
+}
+
+.nav2 {
+  width: 750px;
+  margin: auto;
+  margin-top: 300px;
+  background: blue;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+.nav2 > li {
+  width: 100%;
+  position: relative;
+}
+
+.nav2 > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: Arial;
+  line-height: 50px;
+  display: block;
+}
+
+.nav2 > li::before {
+  content: '';
+  width: 0%;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background: red;
+  transition: 0.5s;
+}
+
+.nav2 > li:hover::before {
+  width: 100%;
+  transform: translateX(-50%);
+}

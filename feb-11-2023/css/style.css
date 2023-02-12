@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+}
+
+.main::before {
+  content: 'The great ';
+}
+
+.main::after {
+  content: ' city';
+}
+
+.pain {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  background: url('../images/bg.jpg');
+  position: relative;
+}
+
+.pain::before {
+  content: '';
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+.pain::after {
+  content: '';
+  width: 100px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+.pain:hover::before {
+  left: -100px;
+}
+
+.pain:hover::after {
+  right: -100px;
+}

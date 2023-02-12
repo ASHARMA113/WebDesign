@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dhaka {
+  /* 
+  border-width: 5px;
+  border-style: solid;
+  border-color: red; 
+  */
+  border: 5px solid red;
+  width: max-content;
+  margin: 20px;
+  padding: 10px;
+}
+
+.vai {
+  width: 300px;
+  height: 600px;
+  background: red;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+.bon {
+  width: 300px;
+  height: 100px;
+  background: red;
+  margin: 20px;
+}
+
+.vaiyerChele {
+  width: 80px;
+  height: 80px;
+  background: cornflowerblue;
+  margin: auto;
+  border: 20px double yellow;
+}
+
+.common {
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: blue;
+  border-top: 5px solid blue;
+  border-right-width: 5px;
+  border-right-style: solid;
+  border-right-color: blue;
+  border-right: 5px solid blue;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+  border-bottom: 5px solid blue;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: blue;
+  border-left: 5px solid blue;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin: 20px 30px 40px 50px;
+  margin: 20px 30px;
+  margin: 20px 30px 30px;
+  margin: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding: 20px 30px 40px 50px;
+  padding: 20px 30px;
+  padding: 20px 30px 30px;
+  padding: 20px;
+  margin-left: auto;
+}

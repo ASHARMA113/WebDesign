@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.sakib {
+  width: 300px;
+  height: 300px;
+  background-image: url('./images/Sakib.jpg');
+  background-size: cover;
+  margin: auto;
+  position: relative;
+}
+
+.joya {
+  width: 150px;
+  height: 150px;
+  background-image: url('./images/Joya.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: 0.5s;
+}
+.bubli {
+  width: 150px;
+  height: 150px;
+  background-image: url('./images/bubli.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transition: 0.5s;
+}
+
+.mithila {
+  width: 150px;
+  height: 150px;
+  background-image: url('./images/mithila.jpg');
+  background-size: cover;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: 0.5s;
+}
+
+.apu {
+  width: 150px;
+  height: 150px;
+  background-image: url('./images/Apu.jpg');
+  background-size: cover;
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.sakib:hover > .joya {
+  left: -50%;
+  top: -50%;
+}
+
+.sakib:hover > .bubli {
+  right: -50%;
+  top: -50%;
+}
+
+.sakib:hover > .mithila {
+  left: -50%;
+  bottom: -50%;
+}
+
+.sakib:hover > .apu {
+  right: -50%;
+  bottom: -50%;
+}
