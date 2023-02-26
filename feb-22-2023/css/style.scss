@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('./main.css');
+
+$borderColor: #000;
+
+@mixin chieldCenter($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  @include chieldCenter(space-evenly, center);
+  > .pain {
+    width: 300px;
+    height: 200px;
+    background: green;
+    @include chieldCenter(center, center);
+    border: 5px solid $borderColor;
+    > .rain {
+      width: 120px;
+      height: 120px;
+      background: red;
+      border-radius: 50%;
+      border: 5px solid $borderColor;
+    }
+  }
+  .abul {
+    @extend .pain;
+    background: #fff;
+    .babul {
+      @extend .rain;
+    }
+  }
+}

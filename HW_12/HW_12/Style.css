@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 750px;
+    background-color: lightblue;
+    margin: 20px auto;
+    list-style: none;
+    display: flex;
+}
+.main li{
+    width: 150px;
+    position: relative;
+}
+
+.main li a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    line-height: 50px;  
+}
+
+.main li:hover {
+    background-color: blue;
+}
+.main li:hover a {
+    color: white;
+}
+.sub1{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+    background-color: lightblue;
+    display: none;
+}
+
+.main li:hover .sub1 {
+    display: block;
+
+}
