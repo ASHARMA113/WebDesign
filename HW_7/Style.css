@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.green{
+    width: 300px;
+    height: 200px;
+    background: green;
+    border:1px solid black ;
+    display: flex;
+    margin: auto;
+
+}
+
+.red{
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: auto;
+    border-radius:50% ;
+}
+
+.green:hover{
+    display: block;
+}
+
+.green:hover.green{
+    background-color: white;
+    display: flex;   
+}
+
+.red:hover.red{
+    background-color: red;
+    height: auto;
+    
+}
+
+
+
+
